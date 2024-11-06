@@ -1,29 +1,42 @@
-import {useRef} from "react";
-import {FaBars, FaTimes} from "react-icons/fa"
-import React from "react";
+import React, { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import Imgix from "react-imgix"; // Import Imgix
 import "./navbar.css";
 
 const Navbar = () => {
-    const navRef = useRef();
+  const navRef = useRef();
 
-    const showNavbar = () => {
-       navRef.current.classList.toggle("responsive_nav"); 
-    }
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
+
   return (
     <header>
-        <img src="" alt="" />
-        <nav ref={navRef}>
-            <a href="/#">Home</a>
-            <a href="/#">Services</a>
-            <a href="/#">About Us</a>
-            <a href="/#">Contact Us</a>
-            <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-                <FaTimes/>
-            </button>
-        </nav>
-        <button className="nav-btn" onClick={showNavbar}>
-            <FaBars />
+      <div className="logo-container">
+        <Imgix
+          src="https://your-imgix-domain.imgix.net/assets/befog_logo.svg"
+          width={100}
+          height={100}
+          alt="Befog Logo"
+          className="logo"
+          imgixParams={{
+            auto: "format,compress",
+            fit: "crop"
+          }}
+        />
+      </div>
+      <nav ref={navRef}>
+        <a href="/#">Home</a>
+        <a href="/#">Services</a>
+        <a href="/#">About Us</a>
+        <a href="/#">Contact Us</a>
+        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
+          <FaTimes />
         </button>
+      </nav>
+      <button className="nav-btn" onClick={showNavbar}>
+        <FaBars />
+      </button>
     </header>
   );
 };
