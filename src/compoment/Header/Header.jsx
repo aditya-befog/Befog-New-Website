@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import ServiceCard from "../Service/Service.jsx";
+import Testimonial from "../Testimonial/Testimonial.jsx";
 
 const services = [
   {
@@ -154,6 +155,33 @@ const Header = () => {
               alt="Founder"
             />
           </div>
+        </div>
+      </div>
+      <div className="Founder-button">
+        <button>View all Team</button>
+      </div>
+      <div className="testimonial-body">
+        <div className="testimonial-section">
+          <h1>What client says about us</h1>
+          <div className="testimonials">
+            <Testimonial
+              name="Aditya Kumar Kansaljiva"
+              rating="2"
+              text="Great service, but there's room for improvement."
+            />
+            <Testimonial
+              name="Aditya Kumar Kansaljiva"
+              rating="2"
+              text="The experience was okay, could be better."
+            />
+          </div>
+        </div>
+      </div>
+      <div className="box-container">
+        <h1>Get in Touch</h1>
+        <div className="boxes">
+          <div className="box left-box"></div>
+          <div className="box right-box"></div>
         </div>
       </div>
     </header>

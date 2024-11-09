@@ -1,0 +1,33 @@
+.testimonial {
+    background-color: #333;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    position: relative;
+  }
+  
+  .testimonial-content {
+    margin-bottom: 20px;
+  }
+  
+  .quote-mark {
+    font-size: 50px;
+    position: absolute;
+    top: -30px;
+    left: 10px;
+  }
+  
+  .testimonial-footer {
+    text-align: center;
+  }
+  
+  .name {
+    font-weight: bold;
+  }
+  
+  .rating {
+    color: #ffd700;
+  }
+  

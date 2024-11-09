@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import Imgix from "react-imgix"; // Import Imgix
+import Imgix from "react-imgix";
 import "./navbar.css";
 
 const Navbar = () => {

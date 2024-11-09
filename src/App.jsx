@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Navbar from './compoment/Navbar/navbar'
 import Header from './compoment/Header/Header'
+import Footer from './compoment/footer/footer'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Navbar />
       <Header />
+      <Footer />
     </>
   )
 }
