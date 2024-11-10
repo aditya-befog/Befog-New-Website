@@ -1,7 +1,7 @@
 import React from "react";
-import "./Header.css";
-import ServiceCard from "../Service/Service.jsx";
-import Testimonial from "../Testimonial/Testimonial.jsx";
+import "./Home.css";
+import ServiceCard from "./Service/Service.jsx";
+import Testimonial from "./Testimonial/Testimonial.jsx";
 
 const services = [
   {
@@ -42,7 +42,34 @@ const services = [
   },
 ];
 
-const Header = () => {
+const steps = [
+  {
+    number: 1,
+    title: "Strategy",
+    description:
+      "We begin our journey by analyzing your business objectives and end-user requirements to create a draft of Low-Fidelity Wireframes.",
+  },
+  {
+    number: 2,
+    title: "Design",
+    description:
+      "We design and draft the appearance, feel, and functionality of your product.",
+  },
+  {
+    number: 3,
+    title: "Develop",
+    description:
+      "We use Agile methodology to collaborate and iterate on the product design and development until we achieve flawless UX/UI functionality and experience.",
+  },
+  {
+    number: 4,
+    title: "Support",
+    description:
+      "We provide maintenance and support if required. We monitor the performance of your website/application, fix bugs, and develop new functionalities.",
+  },
+];
+
+const Home = () => {
   return (
     <header className="header">
       <div className="section1">
@@ -188,4 +215,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Home;

@@ -1,97 +1,95 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-header {
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar {
+    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    height: 80px;
-    background-color: #030a00;
-    color: #eee;
+    align-items: center;
+    padding: 20px 8%;
+    background: #000;
+    position: relative;
 }
 
 .logo-container {
-    width: 80px;
-    height: 80px;
     display: flex;
-    align-items: center;
+    width: 120px;
+    transition: width 0.5s ease-in-out;
 }
 
 .logo {
-    object-fit: contain;
     width: 100%;
-    height: auto;
-    margin: 0 0 0 2rem;
+    cursor: pointer;
 }
 
-nav {
+.nav-links {
     display: flex;
-    gap: 2rem;
-    align-items: center;
+    list-style: none;
+    justify-content: center;
+    flex-grow: 1;
 }
 
-nav a {
-    margin: 0 1rem;
-    color: #eee;
-    text-decoration: none;
-    font-size: 1.2rem;
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    font-weight: 500;
     transition: color 0.3s;
 }
 
-nav a:hover {
-    color: #f0a500;
+.nav-links a:hover {
+    color: #ddd;
 }
 
-header .nav-btn {
-    padding: 10px;
-    cursor: pointer;
-    background: transparent;
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    background: none;
     border: none;
-    color: #eee;
-    font-size: 1.5rem;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    margin: 0 2rem;
+    cursor: pointer;
 }
 
-@media only screen and (max-width: 1024px) {
-    header .nav-btn {
-        visibility: visible;
-        opacity: 1;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
     }
 
-    nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
         width: 100%;
+        height: calc(100vh - 60px);
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 2rem;
-        background-color: #030a00;
-        transition: transform 0.4s ease;
-        transform: translateY(-100vh);
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
     }
 
-    .responsive_nav {
+    .nav-links.open {
         transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
     }
 
-    .nav-close-btn {
-        position: absolute;
-        top: 2rem;
-        right: 2rem;
-        font-size: 2rem;
-    }
-
-    nav a {
-        font-size: 1.5rem;
+    .nav-links li {
+        margin: 20px 0;
     }
 }

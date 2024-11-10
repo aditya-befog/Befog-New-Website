@@ -1,43 +1,37 @@
-import React, { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
-import Imgix from "react-imgix";
+import React, { useState } from "react";
 import "./navbar.css";
+import logo from "../../assets/befog_logo.svg";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
-  const navRef = useRef();
+  const [isOpen, setIsOpen] = useState(false);
 
-  const showNavbar = () => {
-    navRef.current.classList.toggle("responsive_nav");
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
-    <header>
+    <nav className="navbar">
       <div className="logo-container">
-        <Imgix
-          src="https://your-imgix-domain.imgix.net/assets/befog_logo.svg"
-          width={100}
-          height={100}
-          alt="Befog Logo"
-          className="logo"
-          imgixParams={{
-            auto: "format,compress",
-            fit: "crop"
-          }}
-        />
+        <img src={logo} alt="Befog Logo" className="logo" />
       </div>
-      <nav ref={navRef}>
-        <a href="/#">Home</a>
-        <a href="/#">Services</a>
-        <a href="/#">About Us</a>
-        <a href="/#">Contact Us</a>
-        <button className="nav-btn nav-close-btn" onClick={showNavbar}>
-          <FaTimes />
-        </button>
-      </nav>
-      <button className="nav-btn" onClick={showNavbar}>
-        <FaBars />
+
+      <ul className={isOpen ? "nav-links open" : "nav-links"} onClick={() => isOpen && toggleMenu()}>
+        <li><a href="/">Home</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+
+      <button
+        className="menu-icon"
+        onClick={toggleMenu}
+        aria-label="Toggle navigation"
+        aria-expanded={isOpen}
+      >
+        {isOpen ? <FaTimes /> : <FaBars />}
       </button>
-    </header>
+    </nav>
   );
 };
 
