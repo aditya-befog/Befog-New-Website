@@ -67,10 +67,10 @@ const service = [
 
 const Services = () => {
   return (
-    <div className="app">
-      <div className="header">
+    <div className="ser">
+      <div className="header-ser">
         <h1>OUR SERVICES</h1>
-        <div className="Rectangle-16"></div>
+        <div className="Rectangle-16-ser"></div>
         <h3>What We Do</h3>
         <p>
           We offer full-funnel digital marketing, web design & development

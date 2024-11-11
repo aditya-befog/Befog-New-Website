@@ -559,11 +559,16 @@
   padding: 20px;
 }
 
+.Founder h1{
+  color: #ffffff;
+}
+
 .pointer h1 {
   font-size: 6rem;
   margin: 0;
   position: relative;
   margin: 16% 0% 0% -65%;
+  color: #ffffff;
 }
 
 .container-Founder {
@@ -589,11 +594,13 @@
 .text-content h3 {
   font-size: 2rem;
   margin-bottom: 10px;
+  color: #ffffff;
 }
 
 .text-content p {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .text-content button {

@@ -34,10 +34,12 @@
   background-color: transparent;
 }
 
-h2 {
+.content h2 {
   margin: 10px 0;
+  font-size: 1.4rem;
+  width: 100%;
 }
 
-p {
+.content p {
   font-size: 0.9rem;
 }
