@@ -104,10 +104,8 @@ const Services = () => {
           <p>Support: +91 1234567890</p>
         </div>
         <div className="img1">
-          <img src="" alt="" />
         </div>
         <div className="img2">
-          <img src="" alt="" />
         </div>
         <div className="writeUs">
           <img src="" alt="" />
