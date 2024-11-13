@@ -97,56 +97,85 @@ const Home = () => {
           />
         ))}
       </div>
-      <div class="container">
-        <div class="pointer">
-          <h1>01</h1>
-          <h2>Strategy</h2>
+      <div className="feature">
+        <div className="feature-strategy">
+          <div className="feature-strategy-1">
+            <div className="feature-number">
+              <h1>01</h1>
+            </div>
+            <div className="feature-title">
+              <h2>Strategy</h2>
+            </div>
+          </div>
+          <div className="feature-strategy-container">
+            <div className="feature-circle"></div>
+            <div className="feature-text">
+              <p>
+                We begin our journey by analyzing your business objectives and
+                end-user requirements to create a draft of Low-Fidelity
+                Wireframes.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="content">
-          <p>
-            This is the content paragraph that will align to the right of the
-            headings.
-          </p>
-          <div class="circle"></div>
+        <div className="Design-strategy">
+          <div className="Design-strategy-1">
+            <div className="Design-number">
+              <h1>02</h1>
+            </div>
+            <div className="Design-title">
+              <h2>Design</h2>
+            </div>
+          </div>
+          <div className="Design-strategy-container">
+            <div className="Develop-circle"></div>
+            <div className="feature-text">
+              <p>
+                We design and draft the appearance, feel, and functionality of
+                your product.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="container-left">
-        <div class="pointer-left">
-          <h1>01</h1>
-          <h2>Strategy</h2>
+        <div className="feature-strategy">
+          <div className="feature-strategy-1">
+            <div className="Develop-number">
+              <h1>03</h1>
+            </div>
+            <div className="feature-title">
+              <h2>Develop</h2>
+            </div>
+          </div>
+          <div className="Develop-strategy-container">
+            <div className="feature-circle"></div>
+            <div className="feature-text">
+              <p>
+                We use Agile methodology to collaborate and iterate on the
+                product design and development until we achieve flawless UX/UI
+                functionality and experience.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="content">
-          <p>
-            This is the content paragraph that will align to the left of the
-            headings.
-          </p>
-          <div class="circle"></div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="pointer">
-          <h1>01</h1>
-          <h2>Strategy</h2>
-        </div>
-        <div class="content">
-          <p>
-            This is the content paragraph that will align to the right of the
-            headings.
-          </p>
-          <div class="circle"></div>
-        </div>
-      </div>
-      <div class="container-left-sec">
-        <div class="pointer-left">
-          <h1>01</h1>
-          <h2>Strategy</h2>
-        </div>
-        <div class="content">
-          <p>
-            This is the content paragraph that will align to the left of the
-            headings.
-          </p>
-          <div class="circle"></div>
+        <div className="Design-strategy">
+          <div className="Design-strategy-1">
+            <div className="Support-number">
+              <h1>04</h1>
+            </div>
+            <div className="Design-title">
+              <h2>Support</h2>
+            </div>
+          </div>
+          <div className="Support-strategy-container">
+            <div className="Develop-circle"></div>
+            <div className="feature-text">
+              <p>
+                We provide maintenance and support if required. We monitor the
+                performance of your website/ application, fix bugs, and develop
+                new functionalities.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <div className="button">
@@ -166,19 +195,20 @@ const Home = () => {
               share our vision and the journey that has brought us here. At
               Befog, we are dedicated to pushing the boundaries of technology to
               deliver solutions that not only meet the needs of today but
-              anticipate the challenges of tomorrow. <br /> Our story began with
-              a simple yet profound belief: technology holds the key to
-              transforming businesses and enriching lives. With this conviction
-              at our core, we have assembled a team of exceptional individuals
-              who share a common passion for innovation and excellence.
-              Together, we are committed to creating a future where technology
-              empowers organizations to achieve their fullest potential.
+              anticipate the challenges of tomorrow. <br />
+              <br /> Our story began with a simple yet profound belief:
+              technology holds the key to transforming businesses and enriching
+              lives. With this conviction at our core, we have assembled a team
+              of exceptional individuals who share a common passion for
+              innovation and excellence. Together, we are committed to creating
+              a future where technology empowers organizations to achieve their
+              fullest potential.
             </p>
             <button>Explore more</button>
           </div>
           <div className="founder-img">
             <img
-              src="https://images.unsplash.com/photo-1637684666772-1f215bfd0f5d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNlb3xlbnwwfHwwfHx8MA%3D%3D"
+              src="https://images.unsplash.com/photo-1719937050640-71cfd3d851be?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Founder"
             />
           </div>

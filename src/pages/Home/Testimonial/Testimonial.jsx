@@ -14,3 +14,5 @@ const Testimonial = ({ name, rating, text }) => {
   );
 };
 export default Testimonial;
+
+

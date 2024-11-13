@@ -31,7 +31,7 @@ function contact() {
       <h2>Get in touch</h2>
       <div className="touch">
         <div className="contact-img">
-          <img src="path_to_image.jpg" alt="Contact Image" />
+          <img src="https://images.unsplash.com/photo-1730724620244-40d6e978acd8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNXx8fGVufDB8fHx8fA%3D%3D" alt="Contact Image" />
         </div>
         <div className="contact-details">
           <div className="single-line">

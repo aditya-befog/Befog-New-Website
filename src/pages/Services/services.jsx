@@ -44,7 +44,7 @@ const service = [
       "Launch Iconic Brands at the Intersection of Creativity and Technology.",
   },
   {
-    topic: "WE DEVLOP",
+    topic: "WE DEVELOP",
     icon: "webdev",
     title: "Web Development",
     description:
