@@ -176,6 +176,15 @@ a {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.consult-button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(1, 244, 255, 0.19) 0%,
+    rgba(113, 122, 253, 0.19) 50.51%,
+    rgba(254, 1, 229, 0.19) 100%
+  );
+}
+
 
 @media (max-width: 1024px) {
   h1 {
@@ -202,6 +211,11 @@ a {
     padding: 8px 14px;
     
   }
+  .content h2 {
+    margin: 10px 0;
+    font-size: 1rem;
+    width: 100%;
+}
 
   .servicesitems {
     padding: 15px;

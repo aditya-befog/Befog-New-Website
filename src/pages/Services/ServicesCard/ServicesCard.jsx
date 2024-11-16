@@ -2,18 +2,12 @@
 import React from 'react';
 import './ServicesCard.css';
 
-const ServicesCard = ({ topic, title, description }) => {
-  const topicClass = {
-    "UI/UX Design": "uiux",
-    "Web Development": "webdev",
-    "Digital Marketing": "digitalmarketing",
-    "Consultancy": "consultancy",
-  }[topic] || "";
-
+const ServicesCard = ({ topic, title, description, icon }) => {
   return (
     <div className="service-card">
       <p>{topic}</p>
-      <div className={`icon ${topicClass}`}>
+      <div className="icon">
+        <div className='img' style={{ backgroundImage: `url(${icon})` }}></div>
       </div>
       <h2>{title}</h2>
       <p>{description}</p>
@@ -22,3 +16,4 @@ const ServicesCard = ({ topic, title, description }) => {
 };
 
 export default ServicesCard;
+

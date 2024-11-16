@@ -25,24 +25,12 @@
     height: 116px;
 }
 
-.uiux .icon::before {
-  content: '🎨';
-  color: #FF69B4;
-}
-
-.webdev .icon::before {
-  content: '💻';
-  color: #0073E6;
-}
-
-.digitalmarketing .icon::before {
-  content: '📈';
-  color: #FFD700;
-}
-
-.consultancy .icon::before {
-  content: '🤝';
-  color: #32CD32;
+.service-card .img {
+  width: 64px;
+  height: 64px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
 }
 
 .service-card h2 {
@@ -53,3 +41,5 @@
 .service-card p {
   font-size: 0.9rem;
 }
+
+

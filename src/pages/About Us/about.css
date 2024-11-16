@@ -319,6 +319,7 @@
     flex-wrap: nowrap;
     gap: 20px;
     width: 100%;
+    padding: 0 0 2rem;
 }
 
 .services-container-about h1 {

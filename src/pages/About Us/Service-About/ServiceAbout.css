@@ -37,6 +37,10 @@
     height: 140px;
     margin-bottom: 10px;
   }
+
+  .service-item-about .icon:hover {
+    box-shadow: 0 0 10px 5px orange;
+}
   
   .content-About {
     padding: 10px;
