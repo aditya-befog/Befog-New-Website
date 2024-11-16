@@ -418,7 +418,7 @@
 
 @media (max-width: 480px) {
   .feature-circle {
-    width: 221px;
+    width: 105px;
     height: 65px;
     border-radius: 50%;
     background-color: #c4c4c4;
@@ -494,7 +494,7 @@
 
 .Design-strategy-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   width: 90vw;
   padding: 1.5rem;
   border: 1px solid #FF00E5;
@@ -507,7 +507,7 @@
 
 .Support-strategy-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   width: 93vw;
   padding: 1.5rem;
   border: 1px solid #00FF57;
@@ -549,6 +549,14 @@
   margin: 2rem 0;
 }
 
+.Design-text p {
+  width: 70%;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #FFFFFF;
+  margin: 2rem 1rem 2rem 3rem;
+}
+
 
 @media (max-width: 1024px) {
   .Design-strategy {
@@ -556,6 +564,10 @@
     margin-left: 4rem;
   }
   .feature-text p {
+    width: 80%;
+    text-align: center;
+  }
+  .Design-text p {
     width: 80%;
     text-align: center;
   }
@@ -626,7 +638,7 @@
 
 @media (max-width: 480px) {
   .Design-circle {
-    width: 221px;
+    width: 90px;
     height: 65px;
     border-radius: 50%;
     background-color: #c4c4c4;
@@ -649,6 +661,13 @@
     text-align: center;
     font-size: 10px;
     margin: 0 -1rem;
+  }
+
+  .Design-text p {
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    margin: 0 4rem;
   }
 }
 

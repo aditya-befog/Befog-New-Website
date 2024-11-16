@@ -129,7 +129,7 @@ const Home = () => {
           </div>
           <div className="Design-strategy-container">
             <div className="Design-circle"></div>
-            <div className="feature-text">
+            <div className="Design-text">
               <p>
                 We design and draft the appearance, feel, and functionality of
                 your product.
@@ -168,7 +168,7 @@ const Home = () => {
           </div>
           <div className="Support-strategy-container">
             <div className="Design-circle"></div>
-            <div className="feature-text">
+            <div className="Design-text">
               <p>
                 We provide maintenance and support if required. We monitor the
                 performance of your website/ application, fix bugs, and develop
