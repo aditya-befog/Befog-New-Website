@@ -2,7 +2,6 @@ import React from "react";
 import "./about.css";
 import ServiceAbout from "./Service-About/ServiceAbout";
 
-// Array containing the services data
 const serviceabout = [
   {
     title: "Ownership",
