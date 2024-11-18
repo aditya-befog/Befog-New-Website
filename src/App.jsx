@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import './App.css';
 import Navbar from './compoment/Navbar/navbar';
+import ButtonTop from './compoment/button-top/SideButton';
 import Home from './pages/Home/Home';
 import Service from './pages/Services/services'
 import About from './pages/About Us/about';
@@ -13,7 +15,7 @@ import Social from './pages/Social Media/Social';
 import Digital from './pages/Digital Marketing/Digital';
 import Business from './pages/Business Consultancy/Business';
 import Strategy from './pages/Content Strategy/strategy';
-import Paid from './pages/Paid Advertising/paid'
+import Paid from './pages/Paid Advertising/paid';
 
 function App() {
   return (
@@ -32,6 +34,7 @@ function App() {
         <Route path='/strategy' element={<Strategy/>}/>
         <Route path='/paid' element={<Paid/>}/>
       </Routes>
+      <ButtonTop />
       <Footer />
     </div>
 

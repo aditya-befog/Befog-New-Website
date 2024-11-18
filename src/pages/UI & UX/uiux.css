@@ -274,6 +274,10 @@ html, body{
   border: 1px solid #919191;
 }
 
+.work-box:hover{
+  box-shadow: 0 0 10px 5px orange;
+}
+
 .work-box h3 {
   font-size: 1rem;
   margin-bottom: 1rem;

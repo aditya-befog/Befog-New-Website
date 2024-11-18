@@ -22,15 +22,49 @@ a {
 }
 
 .logo-container {
-    display: flex;
+    position: relative;
     width: 120px;
-    transition: width 0.5s ease-in-out;
-}
-
-.logo {
-    width: 100%;
+    display: inline-block;
     cursor: pointer;
-}
+  }
+  
+  .logo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .logo-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+  }
+  
+  .logo-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 68%;
+    height: 100%;
+    background-color: black;
+    opacity: 1;
+  }
+  
+  .logo-container:hover::before {
+    animation: fadeOut 1.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  
 
 .nav-links {
     display: flex;

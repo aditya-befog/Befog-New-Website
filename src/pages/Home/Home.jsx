@@ -24,19 +24,19 @@ const services = [
   },
   {
     title: "AI Development",
-    icon: "circle",
+    icon: "AI",
     description:
       "Our Design Thinking team conceptualizes intuitive, engaging, and aesthetically attractive User Interface (UI) design that offers seamless User Experience (UX) across the web and mobile devices for your audience.",
   },
   {
     title: "ChatBot",
-    icon: "circle",
+    icon: "ChatBot",
     description:
       "We are Creative Nerds. We are Technocrats. But We are Passionate about creating a Successful Brand for You!!!",
   },
   {
     title: "SEO/CRM",
-    icon: "circle",
+    icon: "SEO",
     description:
       "Nurture Your Vision, Magnify Your Brand & Increase Your Sales with Inspiring Digital Marketing Solutions.",
   },
@@ -223,12 +223,12 @@ const Home = () => {
           <div className="testimonials">
             <Testimonial
               name="Aditya Kumar Kansaljiva"
-              rating="2"
+              rating="4.5"
               text="Great service, but there's room for improvement."
             />
             <Testimonial
               name="Aditya Kumar Kansaljiva"
-              rating="2"
+              rating="4.5"
               text="The experience was okay, could be better."
             />
           </div>
@@ -236,11 +236,42 @@ const Home = () => {
       </div>
       <div className="box-container">
         <h1>Get in Touch</h1>
-        <div className="boxes">
-          <div className="box left-box"></div>
-          <div className="box right-box"></div>
+        <div className="touch">
+        <div className="contact-img">
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89505.85425355299!2d80.88177913161047!3d26.87660488687303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaf98c55c97199d7b%3A0xffb3b0de54faaa0e!2sBefog%20(A%26W%20Technologies)!5e0!3m2!1sen!2sin!4v1731913703747!5m2!1sen!2sin"
+        width="600"
+        height="650"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+        </div>
+        <div className="contact-details">
+          <div className="single-line">
+            <form>
+              <label htmlFor="">Name</label>
+              <input type="text" placeholder="Name" />
+            </form>
+            <form>
+            <label htmlFor="">Phone Number</label>
+              <input type="tel" placeholder="Phone Number" />
+            </form>
+          </div>
+          <form>
+          <label htmlFor="">Email Address</label>
+            <input type="email" placeholder="Email Address" />
+          </form>
+          <form>
+          <label htmlFor="">Message</label>
+            <textarea placeholder="Message"></textarea>
+          </form>
+          <button>SEND MESSAGE</button>
         </div>
       </div>
+      </div>
+      
     </header>
   );
 };

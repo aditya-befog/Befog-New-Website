@@ -1,22 +1,28 @@
 import React from "react";
 import "./about.css";
 import ServiceAbout from "./Service-About/ServiceAbout";
+import own from "../../assets/img/brain.png";
+import bulb from "../../assets/img/bulb-light.png";
+import time from "../../assets/img/time-management.png"
 
 const serviceabout = [
   {
     title: "Ownership",
     description:
       "We take full responsibility for our actions. We apologize for our mistakes and work with more sincerity and dedication to delight our customers.",
+    icon:own,
   },
   {
     title: "Think Smarter and Bigger",
     description:
       "We constantly strive for improvement and growth. We embrace change, adopt it, and find solutions to improve ourselves.",
+    icon:bulb,
   },
   {
     title: "Work Ethic",
     description:
       "We are proactive, organized, result-driven, and prompt because we expect high performance from ourselves. Consequently, we regularly invest in training to create a highly skilled and efficient talent pool.",
+    icon:time,
   },
 ];
 

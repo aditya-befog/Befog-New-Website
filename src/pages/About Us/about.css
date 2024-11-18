@@ -102,7 +102,7 @@
     border-radius: 20px;
     min-height: inherit;
     width: 90vw;
-    background-image: url('https://s3-alpha-sig.figma.com/img/1518/e246/15bf241e0b49ea43d419db4bfefba188?Expires=1732492800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hY8Wt1E7JxBOsQ988zih9jTVp6BEHmDp6A7qhflVMwLXyjRG6si5KfnCdObpOnbQcJ8YU3XrHIOslV7rwMT1IKlT~SalK~QfnW2unXM8l03gzmqtX1F~hO9oBJ4w~KjQm7VCvKv9UOoooePx~SvaI-2K-S9bXXxgebc00B8NhzkLaiYHvp1BM~sjqipVDxf4KX1zBu9oYBSEkVReRo-vFFJEcuIa9E2EZLHZaocr-NMxL26HohuSBXVn3qZ-rHz96Tr4L6rQjCQhiYWGJ5wFpbMbof2ScaGg2cpWWgRBGlLXsoheam6~kqR7Qp8HxPUdxOz6i~aTzGdqqCPB62Q--g__');
+    background-image: url(../../assets/img/bg-about-1.jpeg);
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -191,6 +191,7 @@
     min-height: 45vh;
     width: 35vw;
 }
+
 
 .main-container p {
     margin: 0;

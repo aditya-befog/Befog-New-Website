@@ -15,7 +15,7 @@
 
 .testimonial-content {
   background-color: #D9D9D90D;
-  padding: 60px;
+  padding: 70px;
   border-radius: 8px;
   margin-bottom: 15px;
   position: relative;
@@ -24,6 +24,10 @@
   height: 150px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border: 1px solid #FFFFFF80;
+}
+
+.testimonial-content:hover {
+  box-shadow: 0 0 10px 5px orange;
 }
 
 .quote-mark {

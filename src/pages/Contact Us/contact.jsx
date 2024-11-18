@@ -1,5 +1,7 @@
 import React from "react";
 import "./Contact.css";
+import whatsapp from "../../assets/img/whatsapp.png";
+import pen from "../../assets/img/pen.png";
 
 function contact() {
   return (
@@ -14,7 +16,7 @@ function contact() {
       </div>
       <div className="contact">
         <div className="callUs">
-          <img src="" alt="" />
+          <img src={whatsapp} alt="" />
           <h3>Call Us</h3>
           <p>Support: +91 1234567890</p>
         </div>
@@ -23,7 +25,7 @@ function contact() {
         <div className="img2">
         </div>
         <div className="writeUs">
-          <img src="" alt="" />
+          <img src={pen} alt="" />
           <h3>Write Us</h3>
           <p>contact.us@befog.in</p>
         </div>
@@ -31,7 +33,15 @@ function contact() {
       <h2>Get in touch</h2>
       <div className="touch">
         <div className="contact-img">
-          <img src="https://images.unsplash.com/photo-1730724620244-40d6e978acd8?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNXx8fGVufDB8fHx8fA%3D%3D" alt="Contact Image" />
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89505.85425355299!2d80.88177913161047!3d26.87660488687303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaf98c55c97199d7b%3A0xffb3b0de54faaa0e!2sBefog%20(A%26W%20Technologies)!5e0!3m2!1sen!2sin!4v1731913703747!5m2!1sen!2sin"
+        width="600"
+        height="650"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
         </div>
         <div className="contact-details">
           <div className="single-line">
