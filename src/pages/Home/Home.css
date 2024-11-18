@@ -350,6 +350,10 @@ html, body {
   padding: 2rem;
 }
 
+.feature-circle:hover{
+  box-shadow: 0 0 10px 5px orange;
+}
+
 .feature-text p {
   width: 70%;
   font-size: 1rem;
@@ -547,6 +551,10 @@ html, body {
   background-color: #c4c4c4;
   padding: 4rem;
   margin: 0px 2rem;
+}
+
+.Design-circle:hover{
+  box-shadow: 0 0 10px 5px orange;
 }
 
 .feature-text p {
