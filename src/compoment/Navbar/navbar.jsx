@@ -4,9 +4,9 @@ import logo from "../../assets/befog_logo.svg";
 import { FaBars, FaTimes, FaGlobe, FaChevronDown } from "react-icons/fa";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedCountry, setSelectedCountry] = useState("Select Country");
+  const [isOpen, setIsOpen] = useState(false); // Mobile navbar toggle
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Dropdown toggle
+  const [selectedCountry, setSelectedCountry] = useState("Select Country"); // Selected country
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -18,7 +18,8 @@ const Navbar = () => {
 
   const handleCountrySelect = (country) => {
     setSelectedCountry(country);
-    setIsDropdownOpen(false);
+    setIsDropdownOpen(false); // Close dropdown
+    setIsOpen(false); // Close mobile navbar
   };
 
   return (
@@ -29,7 +30,7 @@ const Navbar = () => {
 
       <ul
         className={isOpen ? "nav-links open" : "nav-links"}
-        onClick={() => isOpen && toggleMenu()}
+        onClick={() => isOpen && toggleMenu()} // Close navbar on link click
       >
         <li>
           <a href="/">Home</a>
@@ -45,40 +46,30 @@ const Navbar = () => {
         </li>
         <li
           className="dropdown"
-          onMouseEnter={toggleDropdown}
-          onMouseLeave={toggleDropdown}
+          onMouseEnter={() => !isOpen && toggleDropdown()} // Prevent mobile dropdown hover conflict
+          onMouseLeave={() => !isOpen && toggleDropdown()}
         >
-          <button className="dropdown-toggle">
+          <button
+            className="dropdown-toggle"
+            onClick={toggleDropdown}
+            aria-haspopup="true"
+            aria-expanded={isDropdownOpen}
+          >
             <FaGlobe className="world-icon" />
             <span>{selectedCountry}</span>
             <FaChevronDown className="dropdown-icon" />
           </button>
           {isDropdownOpen && (
             <ul className="dropdown-menu">
-              <li
-                onClick={() => handleCountrySelect("India")}
-                className="dropdown-item"
-              >
-                India
-              </li>
-              <li
-                onClick={() => handleCountrySelect("USA")}
-                className="dropdown-item"
-              >
-                USA
-              </li>
-              <li
-                onClick={() => handleCountrySelect("Canada")}
-                className="dropdown-item"
-              >
-                Canada
-              </li>
-              <li
-                onClick={() => handleCountrySelect("Germany")}
-                className="dropdown-item"
-              >
-                Germany
-              </li>
+              {["India", "USA", "Canada", "Germany"].map((country) => (
+                <li
+                  key={country}
+                  onClick={() => handleCountrySelect(country)}
+                  className="dropdown-item"
+                >
+                  {country}
+                </li>
+              ))}
             </ul>
           )}
         </li>
