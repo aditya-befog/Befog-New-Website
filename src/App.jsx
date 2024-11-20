@@ -1,6 +1,7 @@
-import { useState } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter, useLocation } from 'react-router-dom';
 import './App.css';
+import { ThemeProvider } from "styled-components";
 import Navbar from './compoment/Navbar/navbar';
 import ButtonTop from './compoment/button-top/SideButton';
 import Home from './pages/Home/Home';
@@ -13,11 +14,29 @@ import Uiux from './pages/UI & UX/uiux';
 import Web from './pages/Webpage/Web';
 import Social from './pages/Social Media/Social';
 import Digital from './pages/Digital Marketing/Digital';
-import Business from './pages/Business Consultancy/Business';
 import Strategy from './pages/Content Strategy/strategy';
-import Paid from './pages/Paid Advertising/paid';
+
+const theme = {
+  colors: {
+    btn: "#3498db",   // Button color
+    primary: "#e74c3c", // Primary color for hover
+    shadow: "0px 2px 10px rgba(0, 0, 0, 0.2)", // Box shadow
+    white: "#fff",
+  },
+  media: {
+    mobile: "768px",  // Mobile screen breakpoint
+  },
+};
+
 
 function App() {
+    // Extracts pathname property(key) from an object
+    const { pathname } = useLocation();
+  
+    // Automatically scrolls to top whenever pathname changes
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
   return (
     <div>
       <Navbar />
@@ -30,11 +49,11 @@ function App() {
         <Route path='/web' element={<Web/>}/>
         <Route path='/Social' element={<Social/>} />
         <Route path='/Digital' element={<Digital/>}/>
-        <Route path='/Business' element={<Business/>}/>
         <Route path='/strategy' element={<Strategy/>}/>
-        <Route path='/paid' element={<Paid/>}/>
       </Routes>
+      <ThemeProvider theme={theme}>
       <ButtonTop />
+    </ThemeProvider>
       <Footer />
     </div>
 
