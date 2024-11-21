@@ -9,7 +9,7 @@ import support from "../../assets/img/support.png";
 import design5 from "../../assets/img/design-thinking.png";
 import feature from "../../assets/img/coding.png";
 import background from "../../assets/img/bg.png";
-import secback from "../../assets/img/bg-about-1.jpeg"
+import secback from "../../assets/img/bg5.jpg"
 
 const services = [
   {

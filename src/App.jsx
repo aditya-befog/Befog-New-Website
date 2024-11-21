@@ -16,6 +16,7 @@ import Social from './pages/Social Media/Social';
 import Digital from './pages/Digital Marketing/Digital';
 import Strategy from './pages/Content Strategy/strategy';
 
+
 const theme = {
   colors: {
     btn: "#3498db",   // Button color

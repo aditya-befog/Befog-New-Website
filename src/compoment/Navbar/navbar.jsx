@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
 import "./navbar.css";
 import logo from "../../assets/befog_logo.svg";
 import { FaBars, FaTimes, FaGlobe, FaChevronDown } from "react-icons/fa";
@@ -13,6 +12,19 @@ const Navbar = () => {
     name: "India",
     flag: "https://flagcdn.com/w320/in.png" 
   });
+
+  useEffect(() => {
+    const savedCountry = localStorage.getItem("selectedCountry");
+    if (savedCountry) {
+      try {
+        const parsedCountry = JSON.parse(savedCountry); // Ensure valid JSON format
+        setSelectedCountry(parsedCountry);
+      } catch (e) {
+        console.error("Invalid JSON in localStorage for selectedCountry:", e);
+        localStorage.removeItem("selectedCountry"); // Clear invalid data
+      }
+    }
+  }, []);
 
   const countries = [
     { name: "Andorra", shortForm: "AD", flag: "https://flagcdn.com/w320/ad.png" },
@@ -109,6 +121,7 @@ const Navbar = () => {
 
   const handleCountrySelect = (country) => {
     setSelectedCountry(country);
+    localStorage.setItem("selectedCountry", JSON.stringify(country));
     setIsDropdownOpen(false); // Close dropdown
     setIsOpen(false); // Close mobile navbar
   };
