@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Home.css";
 import ServiceCard from "./Service/Service.jsx";
 import Testimonial from "./Testimonial/Testimonial.jsx";
@@ -9,7 +9,9 @@ import support from "../../assets/img/support.png";
 import design5 from "../../assets/img/design-thinking.png";
 import feature from "../../assets/img/coding.png";
 import background from "../../assets/img/bg.png";
-import secback from "../../assets/img/bg5.jpg"
+import secback from "../../assets/img/bg5.jpg";
+import thirdback from "../../assets/img/bg6.jpg";
+import fourthback from "../../assets/img/bg55.jpg"
 
 const services = [
   {
@@ -81,21 +83,28 @@ const Home = () => {
   const images = [
     background,
     secback,
-    background,
+    thirdback,
+    fourthback,
   ];
 
-  // State to track the current image index
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Function to handle "Previous" button click
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
-  // Function to handle "Next" button click
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
 
   return (
     <header className="header">
