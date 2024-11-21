@@ -11,7 +11,8 @@ import feature from "../../assets/img/coding.png";
 import background from "../../assets/img/bg.png";
 import secback from "../../assets/img/bg5.jpg";
 import thirdback from "../../assets/img/bg6.jpg";
-import fourthback from "../../assets/img/bg55.jpg"
+import fourthback from "../../assets/img/bg55.jpg";
+import founder from "../../assets/img/sanjay-sir.webp";
 
 const services = [
   {
@@ -274,7 +275,7 @@ const Home = () => {
           </div>
           <div className="founder-img">
             <img
-              src="https://images.unsplash.com/photo-1719937050640-71cfd3d851be?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src={founder}
               alt="Founder"
             />
           </div>
