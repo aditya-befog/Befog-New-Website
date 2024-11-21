@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   width: 100vw;
   padding: 0;
   margin: 0;
@@ -45,7 +46,7 @@ html, body {
 }
 
 .next-button {
-  right: 10%; 
+  right: 10%;
 }
 
 .prev-button:hover,
@@ -67,7 +68,6 @@ html, body {
     font-size: 1.2rem;
     padding: 6px;
   }
-  
 }
 
 @media (max-width: 480px) {
@@ -84,7 +84,7 @@ html, body {
     padding: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-}
+  }
 }
 /* Title Styling */
 .section1 h1 {
@@ -109,7 +109,12 @@ html, body {
   color: white;
   background-color: transparent;
   border: 1px solid;
-  border-image-source: linear-gradient(90deg, #00f7ff 0%, #6584ff 51.01%, #ff00e5 100%);
+  border-image-source: linear-gradient(
+    90deg,
+    #00f7ff 0%,
+    #6584ff 51.01%,
+    #ff00e5 100%
+  );
   border-image-slice: 1;
   border-radius: 5px;
   cursor: pointer;
@@ -233,7 +238,6 @@ html, body {
     font-size: 0.85rem;
   }
 }
-
 
 .section2 {
   text-align: center;
@@ -475,7 +479,6 @@ html, body {
   margin: -7rem 3rem 0 32rem;
 }
 
-
 .Develop-strategy-container {
   display: flex;
   flex-direction: row;
@@ -497,7 +500,7 @@ html, body {
   padding: 2rem;
 }
 
-.feature-circle:hover{
+.feature-circle:hover {
   box-shadow: inset 0 0 10px 5px orange;
 }
 
@@ -546,12 +549,10 @@ html, body {
   .arrowleft1 {
     display: none;
   }
-  
+
   .arrowRight {
     display: none;
   }
-  
-  
 
   .feature-strategy-container {
     display: flex;
@@ -616,6 +617,18 @@ html, body {
     text-align: center;
     font-size: 10px;
     margin: 0 -1rem;
+  }
+  .feature-circle {
+    width: 85px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+  }
+  .feature-circle img {
+    width: 54px;
+    height: 51px;
+    object-fit: cover;
+    margin: -1rem 1rem 2rem -1rem;
   }
 }
 
@@ -719,7 +732,7 @@ html, body {
   padding: 2rem;
 }
 
-.Design-circle:hover{
+.Design-circle:hover {
   box-shadow: inset 0 0 10px 5px orange;
 }
 
@@ -737,7 +750,7 @@ html, body {
   padding: 2rem;
 }
 
-.Support-circle:hover{
+.Support-circle:hover {
   box-shadow: inset 0 0 10px 5px orange;
 }
 
@@ -842,24 +855,24 @@ html, body {
 
 @media (max-width: 480px) {
   .Design-circle,
-.Support-circle {
-  width: 90px;
-  height: 65px;
-  border-radius: 50%;
-  background-color: #c4c4c4;
-  margin: 0 0 0 3.4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; /* Ensures the image stays within the circle */
-}
+  .Support-circle {
+    width: 90px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+    margin: 0 0 0 3.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures the image stays within the circle */
+  }
 
-.Design-circle img,
-.Support-circle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire area without stretching */
-}
+  .Design-circle img,
+  .Support-circle img {
+    width: 54px;
+    height: 51px;
+    object-fit: cover; /* Ensures the image covers the entire area without stretching */
+  }
 
   .Design-strategy {
     width: 100vw;
